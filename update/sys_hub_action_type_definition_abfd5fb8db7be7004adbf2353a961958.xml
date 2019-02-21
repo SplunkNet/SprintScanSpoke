@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="Basic Operations">4f0b9f78db7be7004adbf2353a961949</category>
+        <copied_from/>
+        <copied_from_name/>
+        <description>This action will Remotely trigger a scan by the ServiceNow Healthscan instance.  
+
+Mandatory Inputs:
+1.   Token - A pre-approved token authorising the scan can be run against a particular instance
+2.   Scan Type  - Key word identifying the &amp;amp;quot;type&amp;amp;quot; of scan to be triggered
+
+Optional Inputs:
+
+1.    WebHook -Provide a URL that will accept a REST POST message. This occurs when the scan completes. See below for an example of the data returned
+2.   WatchList -Accepts email addresses to populate the watchlist on the scan record. Used in conjunction with send_notifications to send emails when the scan is finished. Will be matched to users in the HealthScan user table.
+3.    Send_notifications  If true, email those in the watchlist. Defaults to false.</description>
+        <internal_name>triggerscan</internal_name>
+        <label_cache>[{"name":"{{action.token}}","label":"action➛token","type":"action","ref":""},{"name":"{{action.scan_type}}","label":"action➛scan_type","type":"action","ref":""},{"name":"{{action.webhook}}","label":"action➛webhook","type":"action","ref":""},{"name":"{{action.watchlist}}","label":"action➛watchlist","type":"action","ref":""},{"name":"{{action.send_notifications}}","label":"action➛send_notifications","type":"action","ref":""}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>TriggerScan</name>
+        <outputs/>
+        <state>draft</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-21 04:36:57</sys_created_on>
+        <sys_id>abfd5fb8db7be7004adbf2353a961958</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>TriggerScan</sys_name>
+        <sys_package display_value="SprintScan WebService  Spoke" source="x_snc_sprintscan_w">7a385fb4db7be7004adbf2353a961949</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SprintScan WebService  Spoke">7a385fb4db7be7004adbf2353a961949</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_abfd5fb8db7be7004adbf2353a961958</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-21 04:49:05</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=abfd5fb8db7be7004adbf2353a961958"/>
+    <sys_variable_value action="delete_multiple" query="document_key=abfd5fb8db7be7004adbf2353a961958"/>
+</record_update>
